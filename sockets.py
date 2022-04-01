@@ -105,8 +105,6 @@ def read_ws(ws,client):
             if (msg is not None):
                 packet = json.loads(msg)
                 send_all_json( packet )
-                # for client in clients:
-                #     client.put( json.dumps(packet) )
             else:
                 break
     except:
